@@ -11,7 +11,7 @@ const DeleteStockModal = ({ show, onHide, stocks, onDelete }) => {
     if (selectedStock) {
       const symbol = selectedStock.value;
 
-      axios.delete(`${process.env.REACT_APP_API_BASE}:${process.env.REACT_APP_API_PORT}/api/delete_stock/${symbol}`)
+      axios.delete(`https://stock-price-tracker-backend.vercel.app/api/delete_stock/${symbol}`)
         .then(() => {
           onDelete(); // Notify the parent component that a stock has been deleted
         })

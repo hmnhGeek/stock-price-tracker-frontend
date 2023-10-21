@@ -18,7 +18,7 @@ const AddStockModal = ({ isOpen, closeModal, onAdd }) => {
     };
 
     // Make the API call to add the new stock using Axios
-    axios.post(`${process.env.REACT_APP_API_BASE}:${process.env.REACT_APP_API_PORT}/api/add_stock`, newStock)
+    axios.post(`https://stock-price-tracker-backend.vercel.app/api/add_stock`, newStock)
       .then(response => {
         console.log("Stock added successfully.", response.data);
       })
