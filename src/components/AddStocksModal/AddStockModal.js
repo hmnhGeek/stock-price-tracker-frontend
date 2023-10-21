@@ -21,6 +21,7 @@ const AddStockModal = ({ isOpen, closeModal, onAdd }) => {
     axios.post(`https://stock-price-tracker-backend.vercel.app/api/add_stock`, newStock)
       .then(response => {
         console.log("Stock added successfully.", response.data);
+        onAdd();
       })
       .catch(error => {
         console.error('API error:', error);
@@ -31,7 +32,6 @@ const AddStockModal = ({ isOpen, closeModal, onAdd }) => {
     setName('');
     setPrice('');
     closeModal();
-    onAdd();
   };
 
   return (
