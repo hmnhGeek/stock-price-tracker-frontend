@@ -1,0 +1,24 @@
+.add-stock-button {
+    float: right !important;
+    margin-bottom: 20px !important;
+    border-radius: 0px !important;
+}
+
+.logo-image {
+    width: 30% !important;
+}
+
+.logo-row {
+    justify-content: center;
+}
+
+.timer {
+    margin-bottom: 0px !important;
+    float: right !important;
+    margin-top: 20px;
+}
+
+.seconds {
+    color: #32CD32;
+    font-weight: bolder;
+}
